@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	
+<!-- Mirrored from www.sidengel.com/video/js/jquery.slimscroll.js by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Jul 2017 15:38:16 GMT -->
+<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>Sid Engel - Resume</title>
+		<meta name="description" content="Hey there, I'm an eighteen year old student, and part time freelancer. I'm always looking for work, and willing to learn more." />
+		<meta name="keywords" content="developer, teen, web, cheap, reliable, innovative, design, designer, develop, cheap, clean, young" />
+		<meta name="author" content="Sid Engel"/>
+		<link rel="shortcut icon" href="https://www.sidengel.com/video/js/favicon.ico">
+		<link rel="icon" href="https://www.sidengel.com/video/js/favicon.ico" type="./image/x-icon">
+		<!--CSS-->
+		<link rel="stylesheet" type="text/css" href="https://www.sidengel.com/video/js/css/style.css" />
+	</head>
+
+	<body id="body" data-ng-app="contactApp">
+
+		<!--Preloader-->
+		<div class="preloader-it">
+			<div class="mdl-spinner mdl-js-spinner is-active is-upgraded" data-upgraded=",MaterialSpinner"><div class="mdl-spinner__layer mdl-spinner__layer-1"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div><div class="mdl-spinner__layer mdl-spinner__layer-2"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div><div class="mdl-spinner__layer mdl-spinner__layer-3"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div><div class="mdl-spinner__layer mdl-spinner__layer-4"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div></div>
+		</div>
+		<!--/Preloader-->
+
+		<!--Main Wrapper-->
+		<div class="main-wrapper">
+
+			<!--Bg Image-->
+			<div class="bg-struct bg-img"></div>
+			<!--/Bg Image-->
+
+			<div class="mdl-js-layout mdl-layout--fixed-header">
+
+				<!--Top Header-->
+				<header class="mdl-layout__header">
+					<div class="mdl-layout__header-row mdl-scroll-spy-1">
+						<!-- Title -->
+						<a href="https://www.sidengel.com/video/js/index.html"><span class="mdl-layout-title">Sid Engel</span></a>
+						<div class="mdl-layout-spacer"></div>
+						<ul class="nav mdl-navigation mdl-layout--large-screen-only">
+							<li><a class="mdl-navigation__link" href="https://www.sidengel.com/video/js/blog/">Blog</a></li>
+							<li><a class="mdl-navigation__link" data-scroll href="#body">about</a></li>
+							<li><a class="mdl-navigation__link" data-scroll href="#skills_sec">skills</a></li>
+							<li><a class="mdl-navigation__link" data-scroll href="#portfolio_sec">portfolio</a></li>
+							<li><a class="mdl-navigation__link" data-scroll href="#experience_sec">experience</a></li>
+							<li><a class="mdl-navigation__link" data-scroll href="#references_sec">Testimonials</a></li>
+							<li><a class="mdl-navigation__link" data-scroll href="#price_sec">Pricing</a></li>
+							<li><a class="mdl-navigation__link" data-scroll href="#contact_sec">contact</a></li>
+						</ul>
+						<!-- Right aligned menu below button -->
+						<button id="demo-menu-lower-right"
+								class="mdl-button mdl-js-button mdl-button--icon ver-more-btn">
+						  <i class="material-icons">more_vert</i>
+						</button>
+
+						<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+							data-mdl-for="demo-menu-lower-right">
+							<li class="mdl-menu__item"><a href="https://discord.gg/EH5tmCG">
+							<i class="zmdi zmdi-comment pr-10"></i>Discord
+						</li>
+							<li class="mdl-menu__item"><a href="mailto:info@sidengel.com"><i class="zmdi zmdi-email-open font-green pr-10"></i>Mail</a></li>
+							<li class="mdl-menu__item"><a href="callto:12345678910"><i class="zmdi zmdi-phone  font-blue  pr-10"></i>+727 277 1056</a></li>
+						</ul>
+					</div>
+				</header>
+				<!--/Top Header-->
+
+				<!--Left Sidebar-->
+				<div class="mdl-layout__drawer">
+					<div class="nicescroll-bar">
+						<div class="drawer-profile-wrap">
+							<div class="candidate-img-drawer mt-25 mb-20"></div>
+							<span class="candidate-name block mb-10 text-center">Sid Engel</span>
+							<ul class="social-icons  mb-30">
+								<li>
+									<a class="facebook-link" href="https://www.facebook.com/sidengeldesigns/">
+										<i id="tt11" class="zmdi zmdi-facebook"></i>
+										<div class="mdl-tooltip" data-mdl-for="tt11">
+											facebook
+										</div>
+									</a>
+								</li>
+								<li>
+									<a class="twitter-link" href="https://twitter.com/sid_engel">
+										<i id="tt12" class="zmdi zmdi-twitter"></i>
+										<div class="mdl-tooltip" data-mdl-for="tt12">
+											twitter
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="mdl-scroll-spy-2">
+							<ul class="mdl-navigation">
+								<li>
+									<a class="mdl-navigation__link border-top-sep" data-scroll href="#body">
+										<i class="zmdi zmdi-border-color pr-15"></i>
+										<span class="font-capitalize">about</span>
+									</a>
+								</li>
+								<li>
+									<a class="mdl-navigation__link border-top-sep" data-scroll href="#skills_sec">
+										<i class="zmdi zmdi-cutlery pr-15"></i>
+										<span class="font-capitalize">skills</span>
+									</a>
+								</li>
+								<li>
+									<a class="mdl-navigation__link border-top-sep" data-scroll href="#portfolio_sec">
+										<i class="zmdi zmdi-case pr-15"></i>
+										<span class="font-capitalize">portfolio</span>
+									</a>
+								</li>
+								<li>
+									<a class="mdl-navigation__link border-top-sep" data-scroll href="#experience_sec">
+										<i class="zmdi zmdi-shield-check pr-15"></i>
+										<span class="font-capitalize">experience</span>
+									</a>
+								</li>
+
+
+								<li>
+									<a class="mdl-navigation__link border-top-sep" data-scroll href="#references_sec">
+										<i class="zmdi zmdi-bookmark pr-15"></i>
+										<span class="font-capitalize">testimonials</span>
+									</a>
+								</li>
+
+								<li>
+									<a class="mdl-navigation__link border-top-sep" data-scroll href="#price_sec">
+										<i class="zmdi zmdi-bookmark pr-15"></i>
+										<span class="font-capitalize">Pricing</span>
+									</a>
+								</li>
+
+								<li>
+									<a class="mdl-navigation__link border-top-sep border-bottom-sep" 	data-scroll  href="#contact_sec">
+										<i class="zmdi zmdi-email pr-15"></i>
+										<span class="font-capitalize">contact</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="drawer-footer mt-50 mb-30 text-center">
+							<p class="font-12 mt-10">Sid Engel &copy; 2017.</p>
+						</div>
+					</div>
+				</div>
+				<!--/Left Sidebar-->
+
+				<!--Main Content-->
+				<div class="main-content relative">
+					<div class="container">
+
+						<!--About Sec-->
+						<section class="about-sec mt-180 mt-sm-120  mb-30">
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="mdl-card mdl-shadow--2dp">
+										<div class="row">
+											<div class="col-md-5 col-xs-12 mb-30">
+												<div class="candidate-img mb-35"></div>
+												<ul class="social-icons">
+													<li>
+														<a class="facebook-link" href="https://www.facebook.com/sidengeldesigns/">
+															<i id="tt1" class="zmdi zmdi-facebook"></i>
+															<div class="mdl-tooltip" data-mdl-for="tt1">
+																facebook
+															</div>
+														</a>
+													</li>
+													<li>
+														<a class="twitter-link" href="https://twitter.com/sid_engel">
+															<i id="tt2" class="zmdi zmdi-twitter"></i>
+															<div class="mdl-tooltip" data-mdl-for="tt2">
+																twitter
+															</div>
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-md-7 col-xs-12">
+												<div class="info-wrap">
+													<h1>sid engel</h1>
+													<h5 class="mt-20 font-grey">Web developer & system adminstrator</h5>
+													<div class="mt-30">
+														<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect bg-blue font-white" href="#contact_sec" data-scroll>contact</a>
+													</div>
+												</div>
+												<ul class="profile-wrap mt-50">
+													<li>
+														<div class="profile-title">age</div>
+														<div class="profile-desc">18</div>
+													</li>
+													<li>
+														<div class="profile-title">email</div>
+														<div class="profile-desc">
+															info@sidengel.com
+														</div>
+													</li>
+													<li>
+														<div class="profile-title">phone</div>
+														<div class="profile-desc">
+															+1 727 277 1056
+														</div>
+													</li>
+													<li>
+														<div class="profile-title">freelance</div>
+														<div class="profile-desc relative">Available
+															<i id="datepickopn" class="zmdi zmdi-calendar-check font-green pl-5"></i>
+															<div id='datepicker1' class='datepicker'></div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!--/About Sec-->
+
+						<!--Skills Sec-->
+						<section id="skills_sec" class="skills-sec sec-pad-top-sm">
+							<div class="row">
+								<div class="col-sm-6 mb-30">
+									<h2 class="mb-30">technical skills</h2>
+									<div class="mdl-card mdl-shadow--2dp">
+										<div class="mb-30">
+											<span class="progress-cat">HTML & CSS</span>
+											<div class="progress-bar-graph">
+												<div class="progress-bar-wrap">
+													<div class="bar-wrap blue-bar">
+														<span data-width="95"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="mb-30">
+											<span class="progress-cat">JS/PHP/MySQL</span>
+											<div class="progress-bar-graph">
+												<div class="progress-bar-wrap">
+													<div class="bar-wrap green-bar">
+														<span data-width="75"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="mb-30">
+											<span class="progress-cat">Linux Administration</span>
+											<div class="progress-bar-graph">
+												<div class="progress-bar-wrap">
+													<div class="bar-wrap yellow-bar">
+														<span data-width="85"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 mb-30">
+									<h2 class="mb-30">soft skills</h2>
+										<div class="mdl-card mdl-shadow--2dp">
+										<div class="mb-30">
+											<span class="progress-cat">Communication</span>
+											<div class="progress-bar-graph">
+												<div class="progress-bar-wrap">
+													<div class="bar-wrap blue-bar">
+														<span data-width="80"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="mb-30">
+											<span class="progress-cat">Language</span>
+											<div class="progress-bar-graph">
+												<div class="progress-bar-wrap">
+													<div class="bar-wrap green-bar">
+														<span data-width="95"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="mb-30">
+											<span class="progress-cat">General Knowledge</span>
+											<div class="progress-bar-graph">
+												<div class="progress-bar-wrap">
+													<div class="bar-wrap yellow-bar">
+														<span data-width="90"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!--/Skills Sec-->
+
+						<!--Portfolio Sec-->
+						<section id="portfolio_sec" class="portfolio-sec sec-pad-top-sm">
+							<div class="mb-15">
+								<h2 class="pull-left float-none-xs">portfolio</h2>
+								<div class="filter-wrap pull-right float-none-xs">
+									<!-- Portfolio Filters -->
+									<ul id="filters">
+										<li><a id="all" href="#" data-filter="*" class="active">all</a></li>
+										<li><a href="#" data-filter=".graphic">graphic</a></li>
+										<li><a href="#" data-filter=".web">web</a></li>
+									</ul>
+									<!--/Portfolio Filters -->
+									<div class="clearfix"></div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="gallery-wrap mb-30">
+								<div class="portfolio-wrap project-gallery">
+									<ul id="portfolio" class="portf auto-construct  project-gallery" data-col="3"><wbr>
+
+										<li class="item mdl-card mdl-shadow--2dp pa-0 web">
+											<div class="light-img-wrap mdl-card__title pa-0">
+												<img class="img-responsive" src="https://www.sidengel.com/video/js/img/ottercraft.jpg"  alt="Image description" />
+												<div class="light-img-overlay"></div>
+												<span class="img-cap">OtterCraft</span>
+											</div>
+											<span class="bottom-links mdl-card__actions">
+												<a id="goto_box_4" href="#"><i class="zmdi zmdi-eye" style="display: none;"></i></a>
+												<a href="https://www.ottercraft.net/"><i class="zmdi zmdi-eye"></i></a>
+											</span>
+											</span>
+										</li>
+
+										<li class="item mdl-card mdl-shadow--2dp pa-0 graphic">
+											<div class="light-img-wrap mdl-card__title pa-0">
+												<img class="img-responsive" src="https://www.sidengel.com/video/js/img/atlas_logo.jpg"  alt="Image description" />
+												<div class="light-img-overlay"></div>
+												<span class="img-cap">Atlas</span>
+											</div>
+											<span class="bottom-links mdl-card__actions">
+												<a id="goto_box_4" href="#"><i class="zmdi zmdi-eye" style="display: none;"></i></a>
+												<a href="https://www.sidengel.com/video/js/img/atlas_logo.jpg"><i class="zmdi zmdi-eye"></i></a>
+											</span>
+											</span>
+										</li>
+
+										<li class="item mdl-card mdl-shadow--2dp pa-0 web">
+											<div class="light-img-wrap mdl-card__title pa-0">
+												<img class="img-responsive" src="https://www.sidengel.com/video/js/img/olympia.jpg"  alt="Image description" />
+												<div class="light-img-overlay"></div>
+												<span class="img-cap">Olympia</span>
+											</div>
+											<span class="bottom-links mdl-card__actions">
+												<a id="goto_box_4" href="#"><i class="zmdi zmdi-eye" style="display: none;"></i></a>
+												<a href="https://www.sidengel.com/dev/olympia"><i class="zmdi zmdi-eye"></i></a>
+											</span>
+											</span>
+										</li>
+
+										<li class="item mdl-card mdl-shadow--2dp pa-0 graphic">
+											<div class="light-img-wrap mdl-card__title pa-0">
+												<img class="img-responsive" src="https://www.sidengel.com/video/js/img/foxxem_banner.jpg"  alt="Image description" />
+												<div class="light-img-overlay"></div>
+												<span class="img-cap">Foxxem</span>
+											</div>
+											<span class="bottom-links mdl-card__actions">
+												<a id="goto_box_4" href="#"><i class="zmdi zmdi-eye" style="display: none;"></i></a>
+												<a href="https://www.sidengel.com/video/js/img/foxxem_banner.jpg"><i class="zmdi zmdi-eye"></i></a>
+											</span>
+										</li>
+
+										<li class="item mdl-card mdl-shadow--2dp pa-0 web">
+											<div class="light-img-wrap mdl-card__title pa-0">
+												<img class="img-responsive" src="https://www.sidengel.com/video/js/img/sourceic.jpg"  alt="Image description" />
+												<div class="light-img-overlay"></div>
+												<span class="img-cap">SourceIC</span>
+											</div>
+											<span class="bottom-links mdl-card__actions">
+												<a id="goto_box_4" href="#"><i class="zmdi zmdi-eye" style="display: none;"></i></a>
+												<a href="http://www.sourceic.com/"><i class="zmdi zmdi-eye"></i></a>
+											</span>
+										</li>
+
+										<li class="item mdl-card mdl-shadow--2dp pa-0 web">
+											<div class="light-img-wrap mdl-card__title pa-0">
+												<img class="img-responsive" src="https://www.sidengel.com/video/js/img/elixirpvp.jpg"  alt="Image description" />
+												<div class="light-img-overlay"></div>
+												<span class="img-cap">ElixirPvP</span>
+											</div>
+											<span class="bottom-links mdl-card__actions">
+												<a id="goto_box_4" href="#"><i class="zmdi zmdi-eye" style="display: none;"></i></a>
+												<a href="http://elixirpvp.us/"><i class="zmdi zmdi-eye"></i></a>
+											</span>
+										</li>
+									</ul>
+									<!-- Hidden video div -->
+									<div style="display:none;" id="video1">
+										<video class="lg-video-object lg-html5 video-js vjs-default-skin" controls preload="none">
+											<source src="https://www.sidengel.com/video/js/video/video1.mp4" type="video/webm">
+											<source src="https://www.sidengel.com/video/js/video/video1.webm" type="video/webm">
+											 Your browser does not support HTML5 video.
+										</video>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!--/Portfolio Sec-->
+
+						<!--Experience Sec-->
+						<section id="experience_sec" class="experience-sec sec-pad-top-sm">
+							<h2 class="mb-30">experience</h2>
+							<div class="timeline-wrap  overflow-hide mb-30">
+								<ul class="timeline">
+									<li>
+										<div class="timeline-badge">
+											<i class="zmdi zmdi-case font-blue"></i>
+										</div>
+										<div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-blue">
+											<div class="timeline-heading">
+												<h4 class="mb-10">Web Developer</h4>
+												<span class="duration mb-5">Jun 2016 - present</span>
+												<span class="institution">High School / College</span>
+											</div>
+											<div class="timeline-body">
+												<p class="mt-25">After poking around in every computer related field, I had found my pride and joy. After a few months of learning basic HTML/CSS/JS/PHP, I knew this was the field I belonged in.</p>
+											</div>
+										</div>
+									</li>
+
+									<li class="timeline-inverted">
+										<div class="timeline-badge">
+											<i class="zmdi zmdi-format-color-text font-green"></i>
+										</div>
+										<div class="timeline-panel mdl-card mdl-shadow--2dp  pt-30 pb-30 border-top-green">
+											<div class="timeline-heading">
+												<h4 class="mb-10">Graphic Designer</h4>
+												<span class="duration mb-5">Aug 2014 — Mar 2016</span>
+												<span class="institution">High School</span>
+											</div>
+											<div class="timeline-body">
+												<p class="mt-25">For a short period of time, I was a graphic design freelancer. I had learned a lot and did a good ammount of work. Later on, I had realised it's not my specialty.</p>
+											</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="timeline-badge">
+											<i class="zmdi zmdi-city-alt font-yellow"></i>
+										</div>
+										<div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-yellow">
+											<div class="timeline-heading">
+												<h4 class="mb-10">MC Server Owner</h4>
+												<span class="duration mb-5">Jan 2012 – Present</span>
+												<span class="institution">Middle School</span>
+											</div>
+											<div class="timeline-body">
+												<p class="mt-25">At a very young age, I had gotten into running MineCraft servers. From this, I've learned the basics of networking and maintaining a server. Surprisingly, it's something I still keep up with.</p>
+											</div>
+										</div>
+									</li>
+									<li class="clearfix no-float"></li>
+								</ul>
+							</div>
+						</section>
+						<!--/Experience Sec-->
+
+						<!--References Sec-->
+						<section id="references_sec" class="reference-sec sec-pad-top-sm">
+							<h2 class="mb-30">testimonial</h2>
+							<div class="row">
+								<div class="col-sm-12 mb-30">
+									<div class="mdl-card mdl-shadow--2dp border-top-blue pa-35">
+										<div class="testimonial-carousel">
+											<div>
+												<blockquote>"Love the work done for me, and at a great price too. He’s incredibly easy to work with, and I'd highly recommend him for any of your web development needs. Thanks again!"</blockquote>
+												<span class="ref-name block mb-5 mt-20">Andrew P.</span>
+												<span class="ref-desgn block">MineCraft Server Owner</span>
+											</div>
+											<div>
+												<blockquote>"Sid was amazing to work with, very patient Web Developer who was very understanding when I ultimately realized I had no idea what sort of layout/design I was looking for."</blockquote>
+												<span class="ref-name block mb-5 mt-20">Megan B.</span>
+												<span class="ref-desgn block">CEO of <a href="http://ironnexus.net/">IronNexus</a></span>
+											</div>
+											<div>
+												<blockquote>“Sid did an amazing job working on my site. Before our contract began, it was a boring, dead page. After completion, our site had became a piece of art.”</blockquote>
+												<span class="ref-name block mb-5 mt-20">Spud X.</span>
+												<span class="ref-desgn block">CEO of <a href="http://elixirpvp.us/forums/index.php"<a>ElixirPvP</a></span>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+
+						</section>
+						<!--/References Sec-->
+
+						<!--Client Sec-->
+						<!--<section id="client_sec" class="client-sec sec-pad-top-sm">
+							<div class="row">
+								<div class="col-sm-12 mb-30">
+									<div class="client-carousel">
+										<img src="img/client1.png" alt="client">
+										<img src="img/client2.png" alt="client">
+										<img src="img/client3.png" alt="client">
+										<img src="img/client4.png" alt="client">
+										<img src="img/client5.png" alt="client">
+										<img src="img/client6.png" alt="client">
+									</div>
+								</div>
+							</div>
+						</section>-->
+						<!--/Client Sec-->
+
+						<!--Price Sec-->
+						<section id="price_sec" class="price-sec sec-pad-top-sm">
+							<h2 class="mb-30">pricing</h2>
+							<div class="row">
+								<!-- item -->
+								<div class="col-sm-4 text-center mb-30">
+									<div class="mdl-card mdl-shadow--2dp pa-0">
+										<div class="mdl-card__title pa-0">
+											<h5 class="block pt-25 pb-20">Graphic</h5>
+											<div class="price-bg">
+												<span class="panel-price block font-blue"><span class="pricing-dolor">$</span>10+</span>
+												<span class="pricing-plan block pt-10">per image</span>
+											</div>
+										</div>
+										<div class="mdl-card__supporting-text text-center pa-0">
+											<ul class="list-group mb-0 text-center">
+												<li class="list-group-item">Raw .PSD files</li>
+												<li class="list-group-item">Unlimited Revision</li>
+												<li class="list-group-item">Multiple Renders</li>
+												<li class="list-group-item">Zipped And Sent With Love</li>
+											</ul>
+										</div>
+										<div class="mdl-card__actions pt-30 pb-30">
+											<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect  bg-green font-white" data-scroll href="#contact_sec">Contact</a>
+										</div>
+									</div>
+								</div>
+								<!-- /item -->
+								<!-- item -->
+								<div class="col-sm-4 text-center mb-30">
+									<div class="mdl-card mdl-shadow--2dp pa-0">
+										<div class="mdl-card__title pa-0">
+											<h5 class="block pt-25 pb-20">Web</h5>
+											<div class="price-bg">
+												<span class="panel-price block font-blue"><span class="pricing-dolor">$</span>8</span>
+												<span class="pricing-plan block pt-10">per hour</span>
+											</div>
+										</div>
+										<div class="mdl-card__supporting-text text-center pa-0">
+											<ul class="list-group mb-0 text-center">
+											  <li class="list-group-item">Mobile Responsiveness</li>
+												<li class="list-group-item">Created In Your Vision</li>
+												<li class="list-group-item">Fast Load Times</li>
+												<li class="list-group-item">Unlimited Revision</li>
+
+											</ul>
+										</div>
+										<div class="mdl-card__actions pt-30 pb-30">
+											<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect  bg-green font-white" data-scroll href="#contact_sec">Contact</a>
+										</div>
+									</div>
+								</div>
+								<!-- /item -->
+								<!-- item -->
+								<div class="col-sm-4 text-center mb-30">
+									<div class="mdl-card mdl-shadow--2dp pa-0">
+										<div class="mdl-card__title pa-0">
+											<h5 class="block pt-25 pb-20">Custom</h5>
+											<div class="price-bg">
+												<span class="panel-price block font-blue"><span class="pricing-dolor">$</span>?</span>
+												<span class="pricing-plan block pt-10">per ?</span>
+											</div>
+										</div>
+										<div class="mdl-card__supporting-text text-center pa-0">
+											<ul class="list-group mb-0 text-center">
+												<li class="list-group-item">?</li>
+												<li class="list-group-item">?</li>
+												<li class="list-group-item">?</li>
+												<li class="list-group-item">?</li>
+											</ul>
+										</div>
+										<div class="mdl-card__actions pt-30 pb-30">
+											<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect  bg-green font-white" data-scroll href="#contact_sec">Contact</a>
+										</div>
+									</div>
+								</div>
+								<!-- /item -->
+							</div>
+						</section>
+						<!--/Price Sec-->
+
+						<!--Contact Sec-->
+						<section id="contact_sec" class="contact-sec sec-pad-top-sm">
+							<h2 class="mb-35">contact</h2>
+							<div class="row">
+								<div id="form_card_height" class="col-sm-12 mb-30">
+									<div  class="mdl-card mdl-shadow--2dp" data-ng-controller="ContactController">
+										<h4 class="mb-10 font-unsetcase">Hey <span  data-ng-bind="formData.inputName||'There'">There</span>, happy to hear from you.</h4>
+										<form data-ng-submit="submit(contactform, $event)"  name="contactform"  method="post" class=" form-horizontal mb-30" role="form">
+											<div class="form-group" data-ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
+												<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+													<input autocomplete="off" data-ng-model="formData.inputName" class="mdl-textfield__input" type="text" id="inputName" name="inputName" required>
+													<label class="mdl-textfield__label" for="inputName">name*</label>
+												</div>
+											</div>
+											<div class="form-group" data-ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
+												<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+													<input autocomplete="off" data-ng-model="formData.inputEmail" class="mdl-textfield__input" type="email" id="inputEmail" name="inputEmail" required>
+													<label class="mdl-textfield__label" for="inputEmail">email*</label>
+												</div>
+											</div>
+											<div class="form-group" data-ng-class="{ 'has-error': contactform.inputMessage.$invalid && submitted }">
+												<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+													<textarea
+													data-ng-model="formData.inputMessage"
+													class="mdl-textfield__input"  rows="3" id="inputMessage" name="inputMessage" required></textarea>
+													<label class="mdl-textfield__label" for="inputMessage">message*</label>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="align-center">
+													<button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect  bg-blue font-white" data-ng-disabled="submitButtonDisabled">
+														submit
+													</button>
+												</div>
+											</div>
+										</form>
+										<p class="block result" data-ng-class="result">{{ resultMessage }}</p>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!--/Contact Sec-->
+
+						<!--Footer Sec-->
+						<footer class="footer-sec sec-pad-top-sm sec-pad-bottom text-center">
+							<h4>thank you for visiting.</h4>
+							<p class="mt-10">Sid Engel, 2017. All rights reserved.</p>
+								<ul class="social-icons mt-10">
+									<li>
+										<a class="facebook-link" href="https://www.facebook.com/sidengeldesigns/">
+											<i id="tt6" class="zmdi zmdi-facebook"></i>
+											<div class="mdl-tooltip" data-mdl-for="tt6">
+												facebook
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="twitter-link" href="https://twitter.com/sid_engel">
+											<i id="tt7" class="zmdi zmdi-twitter"></i>
+											<div class="mdl-tooltip" data-mdl-for="tt7">
+												twitter
+											</div>
+										</a>
+									</li>
+								</ul>
+
+						</footer>
+						<!--Footer Sec-->
+					</div>
+				</div>
+				<!--/Main Content-->
+
+			</div>
+		</div>
+		<!--/Main Wrapper-->
+
+		<!-- Scripts -->
+		<script src="https://www.sidengel.com/video/js/js/jquery-1.12.4.min.js"></script>
+		<script src="https://www.sidengel.com/video/js/js/angular.min.js"></script>
+		<script src="https://www.sidengel.com/video/js/js/bootstrap.min.js"></script>
+		<script src="https://www.sidengel.com/video/js/js/jquery-ui.min.js"></script>
+		<script src="https://www.sidengel.com/video/js/js/material.min.js"></script>
+		<script src="https://www.sidengel.com/video/js/js/jQuery.appear.js"></script>
+		<script src="https://www.sidengel.com/video/js/js/app.js"></script>
+		<script src="https://www.sidengel.com/video/js/js/controllers.js"></script>
+		<script src="https://www.sidengel.com/video/js/js/smooth-scroll.js"></script>
+		<script src="https://www.sidengel.com/video/js/js/isotope.js"></script>
+		<script src="https://www.sidengel.com/video/js/js/lightgallery-all.js"></script>
+		<script src="https://www.sidengel.com/video/js/js/owl.carousel.min.js"></script>
+		<script src="https://www.sidengel.com/video/js/js/froogaloop2.min.js"></script>
+		<script src="https://www.sidengel.com/video/js/js/jquery.slimscroll.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxXt2P7-U38bK0xEFIT-ebZJ1ngK8wjww"></script>
+		<script src="https://www.sidengel.com/video/js/js/init.js"></script>
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52838433-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+
+<!-- Mirrored from www.sidengel.com/video/js/jquery.slimscroll.js by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Jul 2017 15:38:16 GMT -->
+</html>
